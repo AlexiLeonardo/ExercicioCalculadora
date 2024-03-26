@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    <h1>Calculadora</h1>
+<body>
+    <!-- calculator -->
+    <div class="calculator">
+        <!-- display -->
+        <div class="display">
+            <input id="display" id="number" placeholder="0" disabled>
+            <h2 id="history"></h2>
+        </div>
+
+        <!-- buttons -->
+        <div class="row">
+            <button class="button grey-text" onclick="Limpar()">AC</button>
+            <div></div>
+            <div class="white" onclick="add_operator('/')">/</div>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="add_number(7)">7</button>
+            <button class="button" onclick="add_number(8)">8</button>
+            <button class="button" onclick="add_number(9)">9</button>
+            <button class="button" onclick="add_operator('*')">*</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="add_number(4)">4</button>
+            <button class="button" onclick="add_number(5)">5</button>
+            <button class="button" onclick="add_number(6)">6</button>
+            <button class="button" onclick="add_operator('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="add_number(1)">1</button>
+            <button class="button" onclick="add_number(2)">2</button>
+            <button class="button" onclick="add_number(3)">3</button>
+            <button class="button" onclick="add_operator('+')">+</button>
+        </div>
+
+        <div class="row">
+        <button class="button" onclick="add_number(0)">0</button>
+        <button class="button" onclick="add_number('.')">.</button>
+        <button class="button grey" onclick="total()">=</button>
+
+        </div>
+        <!-- Botões -->
+
+    </div>
+    <script src="./arquivo.ts"></script>
+</body>
+</html>
